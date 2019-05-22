@@ -33,21 +33,36 @@ def zad42():
     print(slowo + str(maks))
 
 def zad43():
-    with open('Dane_PR2/przyklad.txt','r') as plik3:
+    with open('Dane_PR2/sygnaly.txt','r') as plik3:
     #Ilosc - zmienna odpowiadajaca za ilosc lini do wczytania
         ilosc=1000
         for i in range(ilosc):
             linia=plik3.readline().rstrip()
             maks=0
-            mini=255
+            mini=10000
             
             for znak in linia:
-                if ord(znak)>maks:
+                if ord(znak)>maks: #zmiana na unikod w celu łatwiejszego porównania liter
                     maks=ord(znak)
                 if ord(znak)<mini:
                     mini=ord(znak)
                 delta=maks-mini
             if delta<=10:
                 print(linia) 
-            
+          
+#USER INTERFACE
+print('*********************************')
+
+wybor = int(input('WYBIERZ PODPUNKT ZADANIA OD 1 do 3: '))
+print('*********************************')
+
+if wybor == 1:
+    zad41()
+elif wybor == 2:
+    zad42()
+elif wybor == 3:
+    zad43()
+print('WYJŚCIE:')
+print()
+
 
