@@ -33,25 +33,6 @@ def zad42():
     print(slowo + str(maks))
 
 def zad43():
-    """
-    with open('Dane_PR2/przyklad.txt','r') as plik3:
-        for linia in plik3:
-            maks=0
-            mini=255
-            
-            if '\n' in linia:
-                linia.replace('\n','')
-            for znak in linia:
-                if ord(znak)>maks:
-                    maks=ord(znak)
-                if ord(znak)<mini:
-                    mini=ord(znak)
-                delta=maks-mini
-            print(linia)
-            print(maks,mini,delta)
-            #if delta<=10:
-                #print(linia) 
-    """
     with open('Dane_PR2/przyklad.txt','r') as plik3:
     #Ilosc - zmienna odpowiadajaca za ilosc lini do wczytania
         ilosc=1000
@@ -68,10 +49,7 @@ def zad43():
                 if ord(znak)<mini:
                     mini=ord(znak)
                 delta=maks-mini
-            #print(linia)
-            #print(maks,mini,delta)
             if delta<=10:
                 print(linia) 
-            #print(i+1,linia)
+            
 
-zad43()
