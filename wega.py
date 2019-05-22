@@ -40,9 +40,7 @@ def zad43():
             linia=plik3.readline().rstrip()
             maks=0
             mini=255
-            """for znak in linia:
-                print(ord(znak),end='')
-            """
+            
             for znak in linia:
                 if ord(znak)>maks:
                     maks=ord(znak)
