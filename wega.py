@@ -55,14 +55,15 @@ print('*********************************')
 
 wybor = int(input('WYBIERZ PODPUNKT ZADANIA OD 1 do 3: '))
 print('*********************************')
-
+print('WYJŚCIE:')
+print()
 if wybor == 1:
     zad41()
 elif wybor == 2:
     zad42()
 elif wybor == 3:
     zad43()
-print('WYJŚCIE:')
-print()
+
+
 
 
